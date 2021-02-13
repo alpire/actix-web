@@ -342,7 +342,7 @@ where
                                         actix_rt::spawn(CloseConnection::new(
                                             io, timeout,
                                         ));
-                                    }
+                                    };
                                 }
                                 continue;
                             }

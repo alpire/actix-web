@@ -22,7 +22,7 @@ pub(crate) struct MessageDecoder<T: MessageType>(PhantomData<T>);
 
 #[derive(Debug)]
 /// Incoming request type
-pub(crate) enum PayloadType {
+pub enum PayloadType {
     None,
     Payload(PayloadDecoder),
     Stream(PayloadDecoder),
